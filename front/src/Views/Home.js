@@ -1,12 +1,12 @@
 import CardsHomePage from "../Components/CardsHomePage";
-import Carousel from "../Components/Carousel";
+import ControlledCarousel from "../Components/ControlledCarousel";
+
 
 function Home() {
     return (
         <div className="container">
+            <ControlledCarousel />
             <CardsHomePage />
-            <h1>This is Home page</h1>
-            <Carousel />
         </div>
     ); 
 }

@@ -5,8 +5,10 @@ function CardsHomePage() {
     const cardsWithData = cardsData.map(item => <CardHomePage key={item.id} item={item}/>)
 
     return (
-        <div>
+        <div className="container">
+            <div className="row d-flex justify-content-between">
             {cardsWithData}
+            </div>
         </div>
     )
 }

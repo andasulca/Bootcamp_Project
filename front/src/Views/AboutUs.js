@@ -1,8 +1,13 @@
 
+import { AddressMap } from "../Components/GoogleMaps";
+import TabsWithCards from "../Components/TabsWithCards";
+
+
 function AboutUs() {
     return (
         <div>
-            This is about us
+            <TabsWithCards />
+            <AddressMap />
         </div>
     ); 
 }

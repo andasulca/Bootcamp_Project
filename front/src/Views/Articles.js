@@ -1,8 +1,15 @@
+import ArticlesArticlesPage from "../Components/ArticlesArticlesPage";
+import Pagination from '../Components/Pagination'
+
+
+
 
 function Articles() {
+ 
     return (
-        <div className="test">
-            This is articles
+        <div>
+            <ArticlesArticlesPage />
+            <Pagination />
         </div>
     ); 
 }

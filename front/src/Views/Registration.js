@@ -1,8 +1,10 @@
+import Basic from "../Components/RegistrationForm";
+
 
 function Registration() {
     return (
         <div>
-            This is registration
+            <Basic />
         </div>
     ); 
 }

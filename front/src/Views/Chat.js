@@ -1,33 +1,36 @@
+import { useState } from 'react';
 
 function Chat() {
+    const [tasks, setTasks] = useState(['']);
+    const [newTaskName, setNewTaskName] = useState('');
+    const addTask = () => {
+        const newTasks = [newTaskName, ...tasks]
+        setTasks(newTasks);
+        setNewTaskName('');
+    }
+    const listElements = tasks.map((task, index) => <p key={index}>{task}</p>);
+
     return (
-        <div>
-            <div className="container mt-2">
-                <div className="col">
-                    <div className="overflow-auto border" id="chatContainer">
-                        <div id="chat-content">
-                        </div>
-                    </div>
+        <div className="container mt-2">
+            <div className="col">
+                <div className="overflow-auto border" style={{height: 300}}>
+                        <ul>{listElements}</ul>
+                </div>
+                <div className="form-group text-left">
+                    <label for="chat-username">Username</label>
                     <div>
-                        <form id="chat-form">
-                            <div className="form-group text-left">
-                                <label for="chat-username">Username</label>
-                                <div>
-                                <input type="text" class="form-control col-3" id="chat-username" value="" />
-                                </div>
-                            </div>
-                            <div className="form-group text-left">
-                                <label for="chat-message">Message</label>
-                                <div className="row">
-                                <div className="col-8">
-                                    <textarea className="form-control" id="chat-message" rows="2"></textarea>
-                                </div>
-                                <div>
-                                    <input type="submit" value="Send" />
-                                </div>
-                                </div>
-                            </div>
-                        </form>
+                        <input value={newTaskName} onChange={(event) => {setNewTaskName(event.target.value)}} />
+                    </div>
+                </div>
+                <div className="text-left">
+                    <label for="chat-message">Message</label>
+                    <div className="row">
+                        <div className="col-8">
+                            <textarea className="form-control" rows="2"></textarea>
+                        </div>
+                        <div>
+                            <button onClick={addTask}>Send message</button>
+                        </div>
                     </div>
                 </div>
             </div>

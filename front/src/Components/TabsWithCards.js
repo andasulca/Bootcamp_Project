@@ -3,7 +3,7 @@ import { Card, Nav, Button} from 'react-bootstrap'
 function TabsWithCards() {
     return (
             <Card>
-            <Card.Header>
+            <Card.Header className="nav navbar-dark bg-dark">
                 <Nav variant="pills" defaultActiveKey="#first">
                 <Nav.Item>
                     <Nav.Link href="#first">Tab 1</Nav.Link>

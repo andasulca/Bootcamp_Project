@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import '../Assets/css/lightBox.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 //IMAGES
 //you can also import a local file, the syntax would look like:
@@ -27,12 +30,6 @@ function LightBox() {
   return (
     <div className="App">
       <h1>Simple React Lightbox</h1>
-      <p>
-        featuring adorable animal pictures from{" "}
-        <a href="https://unsplash.com/" target="_blank">
-          unsplash
-        </a>
-      </p>
       <ImageGallery />
     </div>
   );
@@ -94,9 +91,9 @@ function ImageGallery() {
       {
         lightboxDisplay ? 
         <div id="lightbox" onClick={hideLightBox}>
-          <button onClick={showPrev}>⭠</button>
+          <button onClick={showPrev}><FontAwesomeIcon icon={faAngleLeft}/></button>
           <img id="lightbox-img" src={imageToShow}></img>
-          <button onClick={showNext}>⭢</button>
+          <button onClick={showNext}><FontAwesomeIcon icon={faAngleRight}/></button>
         </div>
        : ""
       }

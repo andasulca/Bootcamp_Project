@@ -48,12 +48,18 @@ function TabsWithCards() {
                 </Nav.Item>
                 </Nav>
             </Card.Header>
-            <div className="text-left">
+            <div className="row">
                 <Card.Body>
-                    <Card.Title>{tabHeader}</Card.Title>
-                    <Card.Text>
-                        {tabContent}
-                    </Card.Text>
+                    <div className="col-2 float-left">
+                    <Card.Img variant="top" src="https://dummyimage.com/150x150/000/fff"/>
+                    </div>
+                    
+                    <div className="col-10 float-right">
+                        <Card.Title>{tabHeader}</Card.Title>
+                        <Card.Text>
+                            {tabContent}
+                        </Card.Text>
+                    </div>
                 </Card.Body>
             </div>
         </Card>

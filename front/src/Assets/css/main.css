@@ -3,8 +3,8 @@ body {
 }
 
 .nav-link.active {
-    color: black !important;
-    background-color: yellow !important;
+    color: white !important;
+    background-color: #0f1010!important;
 }
 
 .card-links a {
@@ -15,3 +15,20 @@ body {
     color: black !important;
 }
 
+.carousel-indicators li{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 100% !important;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+h3 a {
+    color: black !important;
+}
+
+p a {
+    color: black !important;
+}

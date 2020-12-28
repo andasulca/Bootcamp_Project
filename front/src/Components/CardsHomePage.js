@@ -7,7 +7,7 @@ function CardsHomePage() {
     return (
         <div className="container">
             <div className="row d-flex justify-content-between">
-            {cardsWithData}
+                {cardsWithData}
             </div>
         </div>
     )

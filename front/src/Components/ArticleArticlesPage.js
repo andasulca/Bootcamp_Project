@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 function ArticleArticlesPage(props) {
     return (
@@ -11,11 +11,11 @@ function ArticleArticlesPage(props) {
             </div>
             <div className="col-10">
                 <div className="row">
-                    <h3>{props.item.header}
+                    <h3><Link to="/article">{props.item.header}</Link>
                     </h3>
                 </div>
                 <div className="row">
-                    {props.item.content}
+                    <p><Link to="/article">{props.item.content}</Link></p>
                 </div>
             </div>
         </div>

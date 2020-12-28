@@ -1,9 +1,9 @@
-import RegistrationForm from "../Components/RegistrationForm";
+import { RegistrationForm } from "../Components/RegistrationForm";
 
 
 function Registration() {
     return (
-        <div>
+        <div className="col-6 text-left">
             <RegistrationForm />
         </div>
     ); 

@@ -3,7 +3,7 @@ import '../Assets/css/lightBox.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import logo from '../Assets/Images/logo.png';
+
 
 //IMAGES
 //you can also import a local file, the syntax would look like:
@@ -48,7 +48,7 @@ function ImageGallery() {
   //looping through our images array to create img elements
   const imageCards = images.map((image) => (
     <div className="col p-0">
-        <img className="image-card" onClick={() => showImage(image)} src={image} />
+        <img className="image-card" alt="" onClick={() => showImage(image)} src={image} />
     </div>
       
   ));
@@ -91,13 +91,13 @@ function ImageGallery() {
 
   return (
     <>
-      <div class="row">{imageCards}</div>
+      <div className="row">{imageCards}</div>
       
       {
         lightboxDisplay ? 
         <div id="lightbox" onClick={hideLightBox}>
           <button onClick={showPrev}><FontAwesomeIcon icon={faAngleLeft}/></button>
-          <img id="lightbox-img" src={imageToShow}></img>
+          <img id="lightbox-img" src={imageToShow} alt=""></img>
           <button onClick={showNext}><FontAwesomeIcon icon={faAngleRight}/></button>
         </div>
        : ""

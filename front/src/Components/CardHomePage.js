@@ -1,5 +1,6 @@
 import { Card } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function CardHomePage(props) {
     return (
@@ -9,7 +10,7 @@ function CardHomePage(props) {
                 <Card.Body>
                     <Card.Title>{props.item.header}</Card.Title>
                     <Card.Text>{props.item.content}</Card.Text>
-                    <Button variant="dark">Go somewhere</Button>
+                    <Button variant="dark"><Link to="/article">Go somewhere</Link></Button>
                 </Card.Body>
             </Card>
         </div>

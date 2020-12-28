@@ -3,7 +3,7 @@ import MessageChat from '../models/MessageChat.js'
 
 const router = express.Router();
 
-router.get('/chat', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const query = MessageChat.find({});
         const messages = await query.exec();
@@ -13,7 +13,7 @@ router.get('/chat', async (req, res) => {
     }
 });
 
-router.post('/chat', async (req, res) => {
+router.post('/', async (req, res) => {
     const messageText = new MessageChat({
         name: req.body.name,
         text: req.body.text,

@@ -1,0 +1,17 @@
+body {
+    padding-bottom: 30px;
+}
+
+.nav-link.active {
+    color: black !important;
+    background-color: yellow !important;
+}
+
+.card-links a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pagination a {
+    color: black !important;
+}
+

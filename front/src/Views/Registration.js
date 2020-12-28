@@ -1,10 +1,10 @@
-import Basic from "../Components/RegistrationForm";
+import RegistrationForm from "../Components/RegistrationForm";
 
 
 function Registration() {
     return (
         <div>
-            <Basic />
+            <RegistrationForm />
         </div>
     ); 
 }

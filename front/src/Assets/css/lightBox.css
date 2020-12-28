@@ -4,9 +4,11 @@
   }
   
   .image-card {
-    width: 30vw;
-    height: 30vw;
-    object-fit: cover;
+    /* width: 30vw;
+    height: 30vw; */
+    /* object-fit: cover; */
+    width: 175px;
+    height: 116px;
   }
   
   #lightbox-img {

@@ -3,6 +3,7 @@ import '../Assets/css/lightBox.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import logo from '../Assets/Images/logo.png';
 
 //IMAGES
 //you can also import a local file, the syntax would look like:
@@ -21,6 +22,7 @@ const image6 =
   "https://images.unsplash.com/photo-1500694216671-a4e54fc4b513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2092&q=80";
 
 
+
 //IMAGE ARRAY
 const images = [image1, image2, image3, image4, image5, image6];
 
@@ -29,7 +31,7 @@ const images = [image1, image2, image3, image4, image5, image6];
 function LightBox() {
   return (
     <div className="App">
-      <h1>Simple React Lightbox</h1>
+      <h1>Vēl viena bilde</h1>
       <ImageGallery />
     </div>
   );
@@ -45,7 +47,10 @@ function ImageGallery() {
   
   //looping through our images array to create img elements
   const imageCards = images.map((image) => (
-    <img className="image-card" onClick={() => showImage(image)} src={image} />
+    <div className="col p-0">
+        <img className="image-card" onClick={() => showImage(image)} src={image} />
+    </div>
+      
   ));
 
   //function to show a specific image in the lightbox, amd make lightbox visible
@@ -86,7 +91,7 @@ function ImageGallery() {
 
   return (
     <>
-      <div>{imageCards}</div>
+      <div class="row">{imageCards}</div>
       
       {
         lightboxDisplay ? 

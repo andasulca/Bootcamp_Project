@@ -49,15 +49,15 @@ function AddNewMessageForm2() {
     }
 
     return (
-        <div>
+        <div className="pt-1">
             {errorsElement}
             <div className="form-group">
                 <label htmlFor="new-task-name">Name</label>
-                <input value={name} onChange={handleNameChange} disabled={loading} type="text" className="form-control" id="new-task-name"></input>
+                <input value={name} onChange={handleNameChange} disabled={loading} type="text" className="form-control col-3" id="new-task-name"></input>
             </div>
             <div className="form-group">
                 <label htmlFor="new-task-text">Text</label>
-                <textarea value={text} onChange={handleTextChange} disabled={loading} id="new-task-text" className="form-control"></textarea>
+                <textarea value={text} onChange={handleTextChange} disabled={loading} id="new-task-text" className="form-control col-6"></textarea>
             </div>
             <div className="form-group">
                 <button onClick={addNewMessage} disabled={loading} className="btn btn-dark">{saveButtonText}</button>

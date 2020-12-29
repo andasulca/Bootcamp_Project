@@ -47,14 +47,14 @@ function ChatMessages() {
                 </div>
                 <div htmlFor="user-title" className="form-group mt-3">
                     <label htmlFor="user">Username</label>
-                    <div className="">
+                    <div className="p-0 col-3">
                         <input value={username} onChange={handleUsernameChange} type="text" className="form-control" id="user"></input>
                     </div>
                 </div>
                 <div className="form-group">
                     <label htmlFor="chat-message">Message</label>
                     <div className="row">
-                        <div className="col-10">
+                        <div className="col-6">
                             <textarea value={message} onChange={handleMessagenChange} id="chat-message" className="form-control"></textarea>
                         </div>
                         <div className="col-2">

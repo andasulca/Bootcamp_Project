@@ -9,7 +9,12 @@ function Message2({message}) {
     return (
         <div className="col pb-1">
             <div className="row">
-                <strong>{name}</strong> {date}
+                <div className="pr-1">
+                    <strong>{name}</strong>
+                </div>
+                <div className="font-weight-light">
+                    {date}
+                </div>
             </div>
             <div className="row">
                 {text}

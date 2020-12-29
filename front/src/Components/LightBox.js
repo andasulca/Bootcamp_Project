@@ -30,8 +30,7 @@ const images = [image1, image2, image3, image4, image5, image6];
 //MAIN APP COMPONENT
 function LightBox() {
   return (
-    <div className="App">
-      <h1>Vēl viena bilde</h1>
+    <div className="App pt-2">
       <ImageGallery />
     </div>
   );
@@ -48,7 +47,7 @@ function ImageGallery() {
   //looping through our images array to create img elements
   const imageCards = images.map((image) => (
     <div className="col p-0">
-        <img className="image-card" alt="" onClick={() => showImage(image)} src={image} />
+        <img className="image-card pt-2" alt="" onClick={() => showImage(image)} src={image} />
     </div>
       
   ));

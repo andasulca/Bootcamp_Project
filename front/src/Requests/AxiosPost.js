@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-function AxiosPost(uri, data) {
+function AxiosPost( uri, data ) {
     const response = async (resolve, reject) => {
         try {
             const url = `http://localhost:3001/${uri}`;

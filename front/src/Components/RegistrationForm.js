@@ -35,39 +35,33 @@ class RegistrationForm extends React.Component {
                         .oneOf([true], 'Accept Ts & Cs is required')
                 })}
                 onSubmit={fields => {
-                    alert('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4))
+                    alert('SUCCESS!! :)\n\n' + JSON.stringify(fields, null, 4))
                 }}
                 render={({ errors, status, touched }) => (
-                    <Form>
+                    <Form className="mt-2">
                         <div className="form-group">
-                            <label htmlFor="firstName">First Name</label>
-                            <Field name="firstName" type="text" className={'form-control' + (errors.firstName && touched.firstName ? ' is-invalid' : '')} />
+                            <Field placeholder="First name*" name="firstName" type="text" className={'form-control' + (errors.firstName && touched.firstName ? ' is-invalid' : '')} />
                             <ErrorMessage name="firstName" component="div" className="invalid-feedback" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="lastName">Last Name</label>
-                            <Field name="lastName" type="text" className={'form-control' + (errors.lastName && touched.lastName ? ' is-invalid' : '')} />
+                            <Field placeholder="Last name*" name="lastName" type="text" className={'form-control' + (errors.lastName && touched.lastName ? ' is-invalid' : '')} />
                             <ErrorMessage name="lastName" component="div" className="invalid-feedback" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <Field name="email" type="text" className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
+                            <Field placeholder="Email*" name="email" type="text" className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
                             <ErrorMessage name="email" component="div" className="invalid-feedback" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <Field name="password" type="password" className={'form-control' + (errors.password && touched.password ? ' is-invalid' : '')} />
+                            <Field placeholder="Password*" name="password" type="password" className={'form-control' + (errors.password && touched.password ? ' is-invalid' : '')} />
                             <ErrorMessage name="password" component="div" className="invalid-feedback" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="confirmPassword">Confirm Password</label>
-                            <Field name="confirmPassword" type="password" className={'form-control' + (errors.confirmPassword && touched.confirmPassword ? ' is-invalid' : '')} />
+                            <Field placeholder="Confirm password*" name="confirmPassword" type="password" className={'form-control' + (errors.confirmPassword && touched.confirmPassword ? ' is-invalid' : '')} />
                             <ErrorMessage name="confirmPassword" component="div" className="invalid-feedback" />
                         </div>
                         <div class="form-group">
-                            <label>Country</label>
                             <Field name="country" as="select" className={'form-control' + (errors.country && touched.country ? ' is-invalid' : '')}>
-                                <option value=""></option>
+                                <option value="">Country*</option>
                                 <option value="LV">Latvia</option>
                                 <option value="EE">Estionia</option>
                                 <option value="LT">Lithuania</option>
@@ -77,12 +71,12 @@ class RegistrationForm extends React.Component {
                         </div>
                         <div className="form-group form-check">
                             <Field type="checkbox" name="acceptTerms" className={'form-check-input ' + (errors.acceptTerms && touched.acceptTerms ? ' is-invalid' : '')} />
-                            <label htmlFor="acceptTerms" className="form-check-label">Accept Terms & Conditions</label>
+                            <label htmlFor="acceptTerms" className="form-check-label" >Accept Terms & Conditions*</label>
                             <ErrorMessage name="acceptTerms" component="div" className="invalid-feedback" />
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="btn btn-primary mr-2">Register</button>
-                            <button type="reset" className="btn btn-secondary">Reset</button>
+                            <button type="submit" className="btn btn-dark mr-2">Register</button>
+                            <button type="reset" className="btn btn-secondary" >Reset</button>
                         </div>
                     </Form>
                 )}

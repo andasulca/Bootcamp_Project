@@ -7,7 +7,7 @@ function CardHomePage(props) {
         <div className="border border-dark">
             <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src="https://dummyimage.com/200x100/000/fff" />
-                <Card.Body>
+                <Card.Body className="text-center">
                     <Card.Title>{props.item.header}</Card.Title>
                     <Card.Text>{props.item.content}</Card.Text>
                     <Button variant="dark"><Link to="/article">Go somewhere</Link></Button>

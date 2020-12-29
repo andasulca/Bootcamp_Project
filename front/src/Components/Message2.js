@@ -5,8 +5,6 @@ function Message2({message}) {
     let name = message.name;
     let text = message.text
     let date = moment(message.createdAt).format('LLLL');
-    
-    
 
     return (
         <div className="col pb-1">

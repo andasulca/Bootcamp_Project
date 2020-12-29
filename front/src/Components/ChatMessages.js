@@ -10,8 +10,6 @@ function ChatMessages() {
      const handleUsernameChange = (event) => setUsername(event.target.value);
      const handleMessagenChange = (event) => setMessage(event.target.value);
 
-     
- 
      const addNewMessage = () => {
         const createdAt = new Date()
          const newMessage = {
@@ -26,9 +24,6 @@ function ChatMessages() {
 
          console.log(createdAt)
      };
-
-     
-
 
     const messagesElements = messages.map((message) => {
         return (
@@ -50,15 +45,12 @@ function ChatMessages() {
                         </div>
                     </div>
                 </div>
-
-
                 <div htmlFor="user-title" className="form-group mt-3">
                     <label htmlFor="user">Username</label>
                     <div className="">
                         <input value={username} onChange={handleUsernameChange} type="text" className="form-control" id="user"></input>
                     </div>
                 </div>
-
                 <div className="form-group">
                     <label htmlFor="chat-message">Message</label>
                     <div className="row">

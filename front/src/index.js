@@ -4,10 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../src/Assets/css/main.css';
 import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/js/bootstrap.js';
-// import 'bootstrap/dist/js/popper.js';
-// global.jQuery = require('jquery');
-// require('bootstrap');
+
 
 
 

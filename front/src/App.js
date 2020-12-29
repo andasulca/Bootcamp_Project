@@ -9,39 +9,36 @@ import Chat from './Views/Chat';
 import Registration from './Views/Registration';
 import Chat2 from './Views/Chat2';
 
-
 function App() {
   return (
     <div>
       <Router >
         <Header />
-
-        <div className="container">
-            <Switch>
-                <Route exact path="/">
-                    <Home />
-                </Route>
-                <Route path="/articles">
-                    <Articles />
-                </Route>
-                <Route path="/article">
-                    <Article />
-                </Route>
-                <Route path="/chat">
-                    <Chat />
-                </Route>
-                <Route path="/registration">
-                    <Registration />
-                </Route>
-                <Route path="/about-us">
-                    <AboutUs />
-                </Route>
-                <Route path="/chat2">
-                    <Chat2 />
-                </Route>
-            </Switch>
-        </div>
-
+            <div className="container">
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/articles">
+                        <Articles />
+                    </Route>
+                    <Route path="/article">
+                        <Article />
+                    </Route>
+                    <Route path="/chat">
+                        <Chat />
+                    </Route>
+                    <Route path="/registration">
+                        <Registration />
+                    </Route>
+                    <Route path="/about-us">
+                        <AboutUs />
+                    </Route>
+                    <Route path="/chat2">
+                        <Chat2 />
+                    </Route>
+                </Switch>
+            </div>
         <Footer />
       </Router>
     </div>

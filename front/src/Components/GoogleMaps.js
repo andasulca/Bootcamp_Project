@@ -5,4 +5,4 @@ const AddressMap = () => {
         </div>
     );
  }
- export{ AddressMap }
+ export { AddressMap }

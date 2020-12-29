@@ -1,7 +1,6 @@
 import ArticleText from "../Components/ArticleText";
 import LightBox from "../Components/LightBox";
 
-
 function Article() {
     return (
         <div class="container">

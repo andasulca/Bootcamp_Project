@@ -1,14 +1,22 @@
+import * as moment from 'moment'
+
 function Message2({message}) {
     
-    let title = message.name;
+    let name = message.name;
     let text = message.text
+    let date = moment(message.createdAt).format('LLLL');
+    
     
 
     return (
-        <div >
-            <strong>{title}</strong>
-            <br/>
-            {text}
+        <div className="col pb-1">
+            <div className="row">
+                <strong>{name}</strong> {date}
+            </div>
+            <div className="row">
+                {text}
+            </div>
+
         </div>
     );
 }

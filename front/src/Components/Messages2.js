@@ -10,7 +10,7 @@ function Messages2() {
     if (messages.loading) {
         content = <h4>Loading...</h4>
     } else if (messages.data.length === 0) {
-        content = <h4>No messages to do! yay!</h4>
+        content = <h4>No messages! Yay!</h4>
     } else {
         content = (
             <ul className="list-group">

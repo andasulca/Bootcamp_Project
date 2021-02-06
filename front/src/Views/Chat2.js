@@ -4,7 +4,7 @@ import Messages2 from "../Components/Messages2";
 function Chat2() {
     return (
         <div className="pt-2">
-            <div className="col border chat">
+            <div className="col border chat overflow-auto">
             <Messages2 />
             </div>
             <AddNewMessageForm2 />

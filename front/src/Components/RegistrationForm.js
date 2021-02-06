@@ -59,7 +59,7 @@ class RegistrationForm extends React.Component {
                             <Field placeholder="Confirm password*" name="confirmPassword" type="password" className={'form-control' + (errors.confirmPassword && touched.confirmPassword ? ' is-invalid' : '')} />
                             <ErrorMessage name="confirmPassword" component="div" className="invalid-feedback" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <Field name="country" as="select" className={'form-control' + (errors.country && touched.country ? ' is-invalid' : '')}>
                                 <option value="">Country*</option>
                                 <option value="LV">Latvia</option>

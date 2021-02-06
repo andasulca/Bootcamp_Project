@@ -9,12 +9,12 @@ function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav variant="pills" className="mr-auto" defaultActiveKey="/">
-                        <Nav.Link as={Link} to="/" eventKey="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/articles" eventKey="/articles">Articles</Nav.Link>
-                        <Nav.Link as={Link} to="/chat" eventKey="/chat">Chat</Nav.Link>
-                        <Nav.Link as={Link} to="/chat2" eventKey="/chat2">Chat2</Nav.Link>
-                        <Nav.Link as={Link} to="/registration" eventKey="/registration">Register</Nav.Link>
-                        <Nav.Link as={Link} to="/about-us"eventKey="/about">About Us</Nav.Link>
+                        <Nav.Link as={Link} to="/" eventKey="">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/articles" eventKey="articles">Articles</Nav.Link>
+                        <Nav.Link as={Link} to="/chat" eventKey="chat">Chat</Nav.Link>
+                        <Nav.Link as={Link} to="/chat2" eventKey="chat2">Chat2</Nav.Link>
+                        <Nav.Link as={Link} to="/registration" eventKey="registration">Register</Nav.Link>
+                        <Nav.Link as={Link} to="/about-us"eventKey="about">About Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

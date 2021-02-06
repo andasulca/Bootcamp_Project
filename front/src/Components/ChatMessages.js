@@ -11,7 +11,7 @@ function ChatMessages() {
      const handleMessagenChange = (event) => setMessage(event.target.value);
 
      const addNewMessage = () => {
-        const createdAt = new Date()
+
          const newMessage = {
              username: username,
              message: message,
@@ -22,13 +22,14 @@ function ChatMessages() {
          setMessages(updatedMessages);
          setMessage('');
 
-         console.log(createdAt)
+        
      };
 
     const messagesElements = messages.map((message) => {
+        
         return (
             <div>
-                <strong className="form-group">{message.username} {username.createdAt}</strong>
+                <strong className="form-group">{message.username} {message.createdAt.toLocaleDateString('en-US')}</strong>
                 <br />
                 <p>{message.message}</p>
             </div>

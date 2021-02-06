@@ -28,6 +28,7 @@ function useAxiosGet(uri) {
                 });
             });
     }, [uri]);
+    
 
     return request;
 }

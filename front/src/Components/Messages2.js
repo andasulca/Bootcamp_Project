@@ -3,7 +3,7 @@ import useAxiosGet from '../Hooks/useAxiosGet';
 
 function Messages2() {
     const messages = useAxiosGet('chat');
-    console.log(messages)
+    
 
     let content = '';
 

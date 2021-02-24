@@ -36,7 +36,7 @@ function AddNewMessageForm2() {
 
 
     // template stuff
-    const saveButtonText = loading ? 'Loading...' : 'Add task';
+    const saveButtonText = loading ? 'Loading...' : 'Add message';
     let errorsElement = '';
     if (errors.length > 0) {
         errorsElement = (

@@ -25,10 +25,10 @@ function ChatMessages() {
         
      };
 
-    const messagesElements = messages.map((message) => {
+    const messagesElements = messages.map((message, id) => {
         
         return (
-            <div>
+            <div key={id}>
                 <strong className="form-group">{message.username} {message.createdAt.toLocaleDateString('en-US')}</strong>
                 <br />
                 <p>{message.message}</p>
